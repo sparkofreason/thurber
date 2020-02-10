@@ -1,0 +1,17 @@
+{:paths ["src" "classes"]
+ :deps {camel-snake-kebab {:mvn/version "0.4.1"}
+        clj-time {:mvn/version "0.15.2"}
+        org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/data.json {:mvn/version "0.2.7"}
+        org.clojure/tools.logging {:mvn/version "0.5.0"}
+        org.apache.beam/beam-sdks-java-core {:mvn/version "2.19.0"}
+        com.google.code.findbugs/jsr305 {:mvn/version "3.0.2"}
+        org.javassist/javassist {:mvn/version "3.26.0-GA"}
+        com.taoensso/nippy {:mvn/version "2.14.0"}
+        org.slf4j/slf4j-api {:mvn/version "1.7.29"}}
+ :aliases
+ {:java {:extra-paths ["build"]
+         :extra-deps
+         {badigeon/badigeon {:git/url "https://github.com/EwenG/badigeon.git"
+                             :sha "f4bcca58536f49c10a5ea87b662f33ccf83338ce"
+                             :tag "0.0.10"}}}}}
